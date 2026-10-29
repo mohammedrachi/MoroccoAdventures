@@ -1,0 +1,413 @@
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.section {
+    padding: 70px 7%;
+    scroll-margin-top: 75px;
+}
+
+.subtitle {
+    color: #d97706;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* TACHE 1 : HEADER */
+header {
+    background-color: #173b35;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #f4b942;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4b942;
+}
+
+/* TACHE 2 : HERO */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    color: white;
+
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.75), rgba(0,0,0,0.15)),
+        url("https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #f4b942;
+}
+
+.hero-content > p:not(.subtitle) {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d97706;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b45309;
+}
+
+/* TITRES DES SECTIONS */
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title > p:last-child {
+    color: #687477;
+}
+
+/* TACHE 3 : DESTINATIONS */
+.destinations-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-7px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    color: #173b35;
+}
+
+.card-content p {
+    color: #687477;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    color: #d97706;
+    font-weight: bold;
+}
+
+/* CIRCUITS */
+.circuits {
+    background-color: #f4f7f4;
+}
+
+.circuits-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.circuit-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid #d97706;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.circuit-card:hover {
+    transform: translateY(-5px);
+}
+
+.circuit-card h3 {
+    color: #173b35;
+    margin-bottom: 10px;
+}
+
+.circuit-card p {
+    color: #687477;
+}
+
+.circuit-card .duration {
+    color: #d97706;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* TACHE 4 : A PROPOS */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #fffaf0;
+}
+
+.about-image,
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-content h2 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #173b35;
+}
+
+.about-content > p:not(.subtitle) {
+    color: #687477;
+}
+
+.features {
+    display: flex;
+    gap: 35px;
+    margin-top: 25px;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+}
+
+.features strong {
+    color: #d97706;
+    font-size: 26px;
+}
+
+.features span {
+    font-size: 13px;
+}
+
+/* TACHE 5 : CONTACT */
+.contact-form {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #d97706;
+    border-color: transparent;
+}
+
+.contact-form button {
+    background-color: #173b35;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #24594f;
+}
+
+/* FOOTER */
+footer {
+    background-color: #173b35;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .destinations-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        min-height: 450px;
+        padding: 50px 25px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section {
+        padding: 45px 20px;
+    }
+
+    .section-title h2,
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .destinations-container,
+    .circuits-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
