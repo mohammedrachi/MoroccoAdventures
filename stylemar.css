@@ -126,7 +126,6 @@ header {
     background-color: #b45309;
 }
 
-/* TITRES DES SECTIONS */
 .section-title {
     text-align: center;
     margin-bottom: 35px;
@@ -141,7 +140,6 @@ header {
     color: #687477;
 }
 
-/* TACHE 3 : DESTINATIONS */
 .destinations-container {
     max-width: 1200px;
     margin: auto;
@@ -188,7 +186,6 @@ header {
     font-weight: bold;
 }
 
-/* CIRCUITS */
 .circuits {
     background-color: #f4f7f4;
 }
@@ -229,7 +226,6 @@ header {
     margin-top: 15px;
 }
 
-/* TACHE 4 : A PROPOS */
 .about {
     display: flex;
     align-items: center;
@@ -281,7 +277,6 @@ header {
     font-size: 13px;
 }
 
-/* TACHE 5 : CONTACT */
 .contact-form {
     max-width: 750px;
     margin: auto;
@@ -331,7 +326,6 @@ textarea:focus {
     background-color: #24594f;
 }
 
-/* FOOTER */
 footer {
     background-color: #173b35;
     color: white;
@@ -347,7 +341,6 @@ footer p {
     font-size: 13px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1000px) {
     .destinations-container {
         grid-template-columns: repeat(2, 1fr);
