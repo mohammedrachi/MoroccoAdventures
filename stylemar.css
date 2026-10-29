@@ -35,7 +35,6 @@ img {
     margin-bottom: 10px;
 }
 
-/* TACHE 1 : HEADER */
 header {
     background-color: #173b35;
     position: sticky;
@@ -80,7 +79,7 @@ header {
     color: #f4b942;
 }
 
-/* TACHE 2 : HERO */
+
 .hero {
     min-height: 520px;
     display: flex;
